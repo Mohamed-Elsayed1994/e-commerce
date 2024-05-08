@@ -1,1 +1,201 @@
-<p>header works!</p>
+<div class="border-bottom">
+    <!-- lang-nav -->
+	<div class="bg-light py-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12 text-center text-md-start"><span>Super Value Deals - Save more with coupons</span></div>
+				<div class="col-6 text-end d-none d-md-block">
+                    <a role="button">
+                        English
+                    </a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--logo,search,icons -->
+	<div class="py-2">
+		<div class="container">
+			<div class="row w-100 align-items-center gx-lg-2 gx-0">
+				<div class="col-xxl-2 col-lg-3 col-md-6 col-5">
+					<a class="navbar-brand d-none d-lg-block fs-2 fw-bold" href="">
+						FreshCart
+					</a>
+					<div class="d-flex justify-content-between w-100 d-lg-none">
+						<a class="navbar-brand fs-2 fw-bold" href="#">
+							FreshCart
+						</a>
+					</div>
+				</div>
+				<div class="col-xxl-5 col-lg-5 d-none d-lg-block">
+					<form action="#">
+						<div class="input-group">
+							<input class="form-control rounded" type="search" placeholder="Search for products">
+
+						</div>
+					</form>
+				</div>
+				<div class="col-md-2 col-xxl-3 d-none d-lg-block">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-outline-secondary text-muted" data-bs-toggle="modal" data-bs-target="#locationModal">
+						<i ></i>
+						Location
+					</button>
+				</div>
+                <!--icons -->
+				<div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7">
+					<div class="list-inline">
+						<div class="list-inline-item me-5">
+							<a href="#" class="text-muted position-relative">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+									<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+							</a>
+						</div>
+						<div class="list-inline-item me-5">
+							<a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+									<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+									<circle cx="12" cy="7" r="4"></circle>
+								</svg>
+							</a>
+						</div>
+						<div class="list-inline-item me-5 me-lg-0">
+							<a class="text-muted position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+									<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+									<line x1="3" y1="6" x2="21" y2="6"></line>
+									<path d="M16 10a4 4 0 0 1-8 0"></path>
+								</svg>
+							</a>
+						</div>
+						<div class="list-inline-item d-inline-block d-lg-none">
+							<!-- Button -->
+							<button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-label="Toggle navigation">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-text-indent-left text-primary" viewBox="0 0 16 16">
+									<path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- features navigation, offcanvas -->
+	<nav class="navbar navbar-expand-lg navbar-light navbar-default py-0 pb-lg-4" aria-label="Offcanvas navbar large">
+		<div class="container">
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default" aria-labelledby="navbar-defaultLabel">
+				<div class="offcanvas-header pb-1">
+					<a class="navbar-brand fs-3 fw-bold" href="#">FreshCart</a>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="d-block d-lg-none mb-4">
+						<form action="#">
+							<div class="input-group">
+								<input class="form-control rounded" type="search" placeholder="Search for products">
+							</div>
+						</form>
+						<div class="mt-2">
+							<button type="button" class="btn btn-outline-secondary text-muted w-100" data-bs-toggle="modal" data-bs-target="#locationModal">
+								<i class=""></i>
+								Pick Location
+							</button>
+						</div>
+					</div>
+					<div class="d-block d-lg-none mb-4">
+						<a class="btn btn-success w-100 d-flex justify-content-center align-items-center" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+							All Departments
+						</a>
+						<div class="collapse mt-2" id="collapseExample">
+							<div class="card card-body">
+								<ul class="mb-0 list-unstyled">
+									<li><a class="dropdown-item" href="#">Dairy, Bread &amp; Eggs</a></li>
+									<li><a class="dropdown-item" href="#">Snacks &amp; Munchies</a></li>
+									<li><a class="dropdown-item" href="#">Fruits &amp; Vegetables</a></li>
+									<li><a class="dropdown-item" href="#">Cold Drinks &amp; Juices</a></li>
+									<li><a class="dropdown-item" href="#">Breakfast &amp; Instant Food</a></li>
+									<li><a class="dropdown-item" href="#">Bakery &amp; Biscuits</a></li>
+									<li><a class="dropdown-item" href="#">Chicken, Meat &amp; Fish</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown me-3 d-none d-lg-block">
+						<button class="btn btn-success px-6" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+							All Departments
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item" href="#">Dairy, Bread &amp; Eggs</a></li>
+							<li><a class="dropdown-item" href="#">Snacks &amp; Munchies</a></li>
+							<li><a class="dropdown-item" href="#">Fruits &amp; Vegetables</a></li>
+						    <li><a class="dropdown-item" href="#">Cold Drinks &amp; Juices</a></li>
+							<li><a class="dropdown-item" href="#">Breakfast &amp; Instant Food</a></li>
+							<li><a class="dropdown-item" href="#">Bakery &amp; Biscuits</a></li>
+							<li><a class="dropdown-item" href="#">Chicken, Meat &amp; Fish</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item  w-100 w-lg-auto">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item  w-100 w-lg-auto">
+								<a class="nav-link" href="#">Shop</a>
+							</li>
+							<li class="nav-item w-100 w-lg-auto">
+								<a class="nav-link" href="#">Recipes</a>
+							</li>
+							<li class="nav-item dropdown w-100 w-lg-auto">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mega menu</a>
+								<div class="dropdown-menu pb-0" style="width: 100vw;">
+									<div class="row p-2 p-lg-4">
+										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
+											<h6 class="text-primary ps-3">Dairy, Bread &amp; Eggs</h6>
+											<a class="dropdown-item" href="#">Butter</a>
+											<a class="dropdown-item" href="#">Milk Drinks</a>
+											<a class="dropdown-item" href="#">Curd &amp; Yogurt</a>
+											<a class="dropdown-item" href="#">Eggs</a>
+											<a class="dropdown-item" href="#">Buns &amp; Bakery</a>
+											<a class="dropdown-item" href="#">Cheese</a>
+											<a class="dropdown-item" href="#">Condensed Milk</a>
+											<a class="dropdown-item" href="#">Dairy Products</a>
+										</div>
+										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
+											<h6 class="text-primary ps-3">Breakfast &amp; Instant Food</h6>
+											<a class="dropdown-item" href="#">Breakfast Cereal</a>
+											<a class="dropdown-item" href="#">Noodles, Pasta &amp; Soup</a>
+											<a class="dropdown-item" href="#">Frozen Veg Snacks</a>
+											<a class="dropdown-item" href="#">Frozen Non-Veg Snacks</a>
+											<a class="dropdown-item" href="#">Vermicelli</a>
+											<a class="dropdown-item" href="#">Instant Mixes</a>
+											<a class="dropdown-item" href="#">Batter</a>
+											<a class="dropdown-item" href="#">Fruit and Juices</a>
+										</div>
+										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
+											<h6 class="text-primary ps-3">Cold Drinks &amp; Juices</h6>
+											<a class="dropdown-item" href="">Soft Drinks</a>
+											<a class="dropdown-item" href="#">Fruit Juices</a>
+											<a class="dropdown-item" href="#">Coldpress</a>
+											<a class="dropdown-item" href="#">Water &amp; Ice Cubes</a>
+											<a class="dropdown-item" href="#">Soda &amp; Mixers</a>
+											<a class="dropdown-item" href="#">Health Drinks</a>
+											<a class="dropdown-item" href="#">Herbal Drinks</a>
+											<a class="dropdown-item" href="#">Milk Drinks</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item w-100 w-lg-auto">
+								<a class="nav-link" href="">About</a>
+							</li>
+							<li class="nav-item w-100 w-lg-auto">
+								<a class="nav-link" href="">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
