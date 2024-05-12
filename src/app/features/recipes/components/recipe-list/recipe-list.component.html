@@ -1,1 +1,115 @@
-<p>recipe-list works!</p>
+<main>
+    <div class="mt-4">
+       <div class="container">
+          <div class="row">
+             <div class="col-12">
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                   <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="#!" class="text-decoration-none">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#!" class="text-decoration-none">Blog</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Freshcart Blog</li>
+                   </ol>
+                </nav>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- section -->
+    <section class="mt-8">
+       <div class="container">
+          <div class="row">
+             <!-- logo -->
+             <div class="col-12">
+                <h1 class="fw-bold">FreshCart Blog</h1>
+             </div>
+          </div>
+       </div>
+    </section>
+    <!-- section -->
+    <section class="mt-6 mb-lg-14 mb-8">
+       <!-- container -->
+       <div class="container">
+          <div class="row d-flex align-items-center mb-8">
+             <div class="col-12 col-md-12 col-lg-8">
+                <a href="#!"class="">
+                   <!-- img -->
+                   <div class="img-zoom">
+                      <img src="https://img.freepik.com/premium-photo/vector-illustration-thanksgiving-invitation-greeting-card-prints-postersillustration_837518-7110.jpg"
+                       alt="" class="img-fluid w-100">
+                   </div>
+                </a>
+             </div>
+             <!-- text -->
+             <div class="col-12 col-md-12 col-lg-4">
+                <div class="ps-lg-8 mt-8 mt-lg-0">
+                   <h2 class="mb-3"><a href="#!" class="text-decoration-none text-dark">Garlic Cream Bucatini with Peas and Asparagus</a></h2>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac erat ut neque bibendum egestas sed quis justo. Integer non rhoncus diam. Nullam eget dapibus lectus, vitae
+                      condimentum sem.
+                   </p>
+                   <div class="d-flex justify-content-between text-muted">
+                      <span><small>2024-05-08</small></span>
+                      <span>
+                         <small>
+                            Read time:
+                            <span class="text-dark fw-bold">6min</span>
+                         </small>
+                      </span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <!-- row -->
+          <div class="row g-4 row-cols-xl-3 row-cols-lg-3 row-cols-2 row-cols-md-2 mt-2">
+             <div class="col" *ngFor="let recipe of recipes;let i = index">
+                <div class="mb-4">
+                   <a href="#!" class="text-decoration-none">
+                      <!-- img -->
+                      <div class="img-zoom">
+                         <img [src]="recipe.imageUrl" alt="{{recipe.name}}" class="img-fluid w-100">
+                      </div>
+                   </a>
+                </div>
+                <!-- text -->
+                <div class="mb-3"><a href="#!" class="text-decoration-none text-muted">{{recipe.categories}}</a></div>
+                <!-- text -->
+                <div>
+                   <h2 class="h5"><a href="#!" class="text-decoration-none text-dark">{{recipe.name}}</a></h2>
+                   <p>{{recipe.description}}</p>
+                   <div class="d-flex justify-content-between text-muted mt-4">
+                      <span><small>{{recipe.date}}</small></span>
+                      <span>
+                         <small>
+                            Read time:
+                            <span class="text-dark fw-bold">{{recipe.readTime}}</span>
+                         </small>
+                      </span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link " href="#" aria-label="Previous">
+                          <span class="text-success" aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span class="text-success" aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+          </div>
+       </div>
+    </section>
+</main>

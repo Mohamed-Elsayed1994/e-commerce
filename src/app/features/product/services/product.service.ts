@@ -16,7 +16,7 @@ export class ProductService {
     new Product(8, 'Grapes', 'Seedless green grapes.', 2.99, 'https://source.unsplash.com/1600x900/?grapes', ['Fruits'], [], true, 120, 4.7),
     new Product(9, 'Honey', 'Pure natural honey.', 7.99, 'https://source.unsplash.com/1600x900/?honey', ['Sweeteners'], ['natural'], true, 90, 4.9),
     new Product(10, 'Ice Cream', 'Vanilla ice cream.', 4.99, 'https://source.unsplash.com/1600x900/?ice-cream', ['Desserts'], ['frozen'], true, 60, 4.3),
-    new Product(11, 'Jam', 'Strawberry jam.', 3.99, 'https://source.unsplash.com/1600x900/?jam', ['Breakfast'], ['sweet'], true, 85, 4.6),
+    /*new Product(11, 'Jam', 'Strawberry jam.', 3.99, 'https://source.unsplash.com/1600x900/?jam', ['Breakfast'], ['sweet'], true, 85, 4.6),
     new Product(12, 'Kale', 'Fresh kale leaves.', 2.99, 'https://source.unsplash.com/1600x900/?kale', ['Vegetables'], ['leafy'], true, 95, 4.7),
     new Product(13, 'Lemons', 'Organic fresh lemons.', 1.99, 'https://source.unsplash.com/1600x900/?lemons', ['Fruits'], ['organic'], true, 150, 4.8),
     new Product(14, 'Mushrooms', 'White button mushrooms.', 3.99, 'https://source.unsplash.com/1600x900/?mushrooms', ['Vegetables'], [], true, 110, 4.9),
@@ -31,7 +31,7 @@ export class ProductService {
     new Product(23, 'Vanilla Extract', 'Pure vanilla extract.', 12.99, 'https://source.unsplash.com/1600x900/?vanilla', ['Cooking Essentials'], [], true, 40, 4.8),
     new Product(24, 'Wheat Flour', 'Whole wheat flour.', 2.49, 'https://source.unsplash.com/1600x900/?wheat-flour', ['Bakery'], ['whole grain'], true, 100, 4.5),
     new Product(25, 'Yogurt', 'Greek yogurt.', 4.50, 'https://source.unsplash.com/1600x900/?yogurt', ['Dairy'], ['healthy'], true, 85, 4.6)
-  ];
+  */];
 
   constructor() { }
   getAllProducts(): Product[] {
