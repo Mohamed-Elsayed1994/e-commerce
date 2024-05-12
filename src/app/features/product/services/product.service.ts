@@ -37,4 +37,12 @@ export class ProductService {
   getAllProducts(): Product[] {
     return this.products;
   }
+  getPopularProducts(): Product[] {
+    return this.products.slice(0, 5);
+    
+  }
+  getDailyBestSells(): Product[] {
+    return this.products.slice(5, 9);
+    
+  }
 }

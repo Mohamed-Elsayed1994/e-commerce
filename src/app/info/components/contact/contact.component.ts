@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  @ViewChild('f', { static: false })
+  contactForm!: NgForm;
+
+  onSubmit(form: NgForm){
+    this.contactForm = form.value;
+  }
 
 }
