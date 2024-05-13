@@ -9,9 +9,10 @@ import { RecipesService } from '../../services/recipes.service';
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [];
+  
 
   constructor(private recipeService: RecipesService){
-    this.recipes = this.recipeService.getRecipes();
+    this.recipes =this.recipeService.getRecipes();
   }
 
 }

@@ -45,4 +45,7 @@ export class ProductService {
     return this.products.slice(5, 9);
     
   }
+  getProduct(index: number){
+    return this.products[index];
+  }
 }

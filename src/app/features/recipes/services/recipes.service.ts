@@ -15,10 +15,10 @@ export class RecipesService {
       '30 minutes',
       '2024-05-10',
       [
-          new Ingredient('Spaghetti', '200g', 'grams'),
-          new Ingredient('Pancetta', '150g', 'grams'),
+          new Ingredient('Spaghetti', '200', 'grams'),
+          new Ingredient('Pancetta', '150', 'grams'),
           new Ingredient('Eggs', '3', 'pieces'),
-          new Ingredient('Parmesan cheese', '50g', 'grams'),
+          new Ingredient('Parmesan cheese', '50', 'grams'),
           new Ingredient('Black pepper', 'to taste', 'grams')
       ],
       ['Italian', 'Pasta'],
@@ -31,7 +31,7 @@ export class RecipesService {
           'Season with black pepper and serve immediately.'
       ],
       20
-  ),/*
+  ),
   new Recipe(
       '2',
       'Chicken Alfredo Pasta',
@@ -40,13 +40,13 @@ export class RecipesService {
       '45 minutes',
       '2024-05-09',
       [
-          new Ingredient('Fettuccine', '300g', 'grams'),
+          new Ingredient('Fettuccine', '300', 'grams'),
           new Ingredient('Chicken breast', '2', 'pieces'),
-          new Ingredient('Mushrooms', '200g', 'grams'),
-          new Ingredient('Heavy cream', '1 cup', 'cup'),
-          new Ingredient('Parmesan cheese', '1/2 cup', 'cup'),
+          new Ingredient('Mushrooms', '200', 'grams'),
+          new Ingredient('Heavy cream', '1', 'cup'),
+          new Ingredient('Parmesan cheese', '1/2 ', 'cup'),
           new Ingredient('Garlic', '3 cloves', 'pieces'),
-          new Ingredient('Butter', '2 tbsp', 'tablespoons'),
+          new Ingredient('Butter', '2', 'tablespoons'),
           new Ingredient('Salt', 'to taste', 'grams'),
           new Ingredient('Black pepper', 'to taste', 'grams')
       ],
@@ -70,10 +70,10 @@ export class RecipesService {
       '2024-05-08',
       [
           new Ingredient('Tomatoes', '2', 'pieces'),
-          new Ingredient('Fresh mozzarella', '200g', 'grams'),
-          new Ingredient('Fresh basil leaves', '1 cup', 'cup'),
-          new Ingredient('Balsamic glaze', '2 tbsp', 'tablespoons'),
-          new Ingredient('Extra virgin olive oil', '2 tbsp', 'tablespoons'),
+          new Ingredient('Fresh mozzarella', '200', 'grams'),
+          new Ingredient('Fresh basil leaves', '1', 'cup'),
+          new Ingredient('Balsamic glaze', '2', 'tablespoons'),
+          new Ingredient('Extra virgin olive oil', '2', 'tablespoons'),
           new Ingredient('Salt', 'to taste', 'grams'),
           new Ingredient('Black pepper', 'to taste', 'grams')
       ],
@@ -86,7 +86,7 @@ export class RecipesService {
           'Serve immediately as a refreshing appetizer or side dish.'
       ],
       10
-  ),
+  ),/*
   new Recipe(
       '4',
       'Homemade Pizza',
@@ -96,10 +96,10 @@ export class RecipesService {
       '2024-05-07',
       [
           new Ingredient('Pizza dough', '1 ball', 'pieces'),
-          new Ingredient('Tomato sauce', '1/2 cup', 'cup'),
-          new Ingredient('Mozzarella cheese', '200g', 'grams'),
-          new Ingredient('Pepperoni slices', '1 cup', 'cup'),
-          new Ingredient('Fresh basil leaves', '1/4 cup', 'cup')
+          new Ingredient('Tomato sauce', '1/2 ', 'cup'),
+          new Ingredient('Mozzarella cheese', '200', 'grams'),
+          new Ingredient('Pepperoni slices', '1 ', 'cup'),
+          new Ingredient('Fresh basil leaves', '1/4 ', 'cup')
       ],
       ['Italian', 'Pizza'],
       [
@@ -121,10 +121,10 @@ export class RecipesService {
       '20 minutes',
       '2024-05-06',
       [
-          new Ingredient('Romaine lettuce', '1 head', 'pieces'),
-          new Ingredient('Garlic croutons', '1 cup', 'cup'),
-          new Ingredient('Parmesan cheese', '1/2 cup', 'cup'),
-          new Ingredient('Caesar dressing', '1/4 cup', 'cup')
+          new Ingredient('Romaine lettuce', '1 ', 'pieces'),
+          new Ingredient('Garlic croutons', '1 ', 'cup'),
+          new Ingredient('Parmesan cheese', '1/2 ', 'cup'),
+          new Ingredient('Caesar dressing', '1/4 ', 'cup')
       ],
       ['Salad'],
       [
@@ -143,18 +143,18 @@ export class RecipesService {
       '25 minutes',
       '2024-05-05',
       [
-          new Ingredient('Broccoli florets', '2 cups', 'cups'),
-          new Ingredient('Bell peppers (assorted colors)', '1 cup', 'cup'),
+          new Ingredient('Broccoli florets', '2 ', 'cups'),
+          new Ingredient('Bell peppers (assorted colors)', '1 ', 'cup'),
           new Ingredient('Carrots', '2', 'pieces'),
-          new Ingredient('Snow peas', '1 cup', 'cup'),
+          new Ingredient('Snow peas', '1 ', 'cup'),
           new Ingredient('Onion', '1', 'piece'),
-          new Ingredient('Garlic', '3 cloves', 'pieces'),
-          new Ingredient('Ginger', '1 tbsp', 'tablespoon'),
-          new Ingredient('Soy sauce', '2 tbsp', 'tablespoons'),
-          new Ingredient('Sesame oil', '1 tbsp', 'tablespoon'),
-          new Ingredient('Honey', '1 tbsp', 'tablespoon'),
-          new Ingredient('Cornstarch', '1 tsp', 'teaspoon'),
-          new Ingredient('Water', '1/4 cup', 'cup')
+          new Ingredient('Garlic', '3 ', 'pieces'),
+          new Ingredient('Ginger', '1 ', 'tablespoon'),
+          new Ingredient('Soy sauce', '2 ', 'tablespoons'),
+          new Ingredient('Sesame oil', '1 ', 'tablespoon'),
+          new Ingredient('Honey', '1 ', 'tablespoon'),
+          new Ingredient('Cornstarch', '1 ', 'teaspoon'),
+          new Ingredient('Water', '1/4 ', 'cup')
       ],
       ['Asian', 'Vegetarian'],
       [
@@ -175,11 +175,11 @@ export class RecipesService {
       '45 minutes',
       '2024-05-04',
       [
-          new Ingredient('Pizza dough', '1 ball', 'pieces'),
-          new Ingredient('Tomato sauce', '1/2 cup', 'cup'),
-          new Ingredient('Fresh mozzarella', '200g', 'grams'),
-          new Ingredient('Fresh basil leaves', '1/4 cup', 'cup'),
-          new Ingredient('Extra virgin olive oil', '2 tbsp', 'tablespoons')
+          new Ingredient('Pizza dough', '1 ', 'pieces'),
+          new Ingredient('Tomato sauce', '1/2 ', 'cup'),
+          new Ingredient('Fresh mozzarella', '200', 'grams'),
+          new Ingredient('Fresh basil leaves', '1/4 ', 'cup'),
+          new Ingredient('Extra virgin olive oil', '2 ', 'tablespoons')
       ],
       ['Italian', 'Pizza'],
       [
@@ -203,15 +203,15 @@ export class RecipesService {
       '25 minutes',
       '2024-05-03',
       [
-          new Ingredient('All-purpose flour', '2 1/4 cups', 'cups'),
-          new Ingredient('Butter', '1 cup', 'cup'),
-          new Ingredient('Granulated sugar', '3/4 cup', 'cup'),
-          new Ingredient('Brown sugar', '3/4 cup', 'cup'),
+          new Ingredient('All-purpose flour', '2 1/4 ', 'cups'),
+          new Ingredient('Butter', '1 ', 'cup'),
+          new Ingredient('Granulated sugar', '3/4 ', 'cup'),
+          new Ingredient('Brown sugar', '3/4 ', 'cup'),
           new Ingredient('Eggs', '2', 'pieces'),
-          new Ingredient('Vanilla extract', '1 tsp', 'teaspoon'),
-          new Ingredient('Baking soda', '1 tsp', 'teaspoon'),
-          new Ingredient('Salt', '1/2 tsp', 'teaspoon'),
-          new Ingredient('Chocolate chips', '2 cups', 'cups')
+          new Ingredient('Vanilla extract', '1 ', 'teaspoon'),
+          new Ingredient('Baking soda', '1 ', 'teaspoon'),
+          new Ingredient('Salt', '1/2 ', 'teaspoon'),
+          new Ingredient('Chocolate chips', '2 ', 'cups')
       ],
       ['Dessert', 'Cookies'],
       [
@@ -235,15 +235,15 @@ export class RecipesService {
       '2024-05-02',
       [
           new Ingredient('Chicken breasts', '2', 'pieces'),
-          new Ingredient('Taco seasoning', '1 packet', 'packet'),
+          new Ingredient('Taco seasoning', '1 ', 'packet'),
           new Ingredient('Flour tortillas', '8', 'pieces'),
-          new Ingredient('Lettuce', '1 cup', 'cup'),
+          new Ingredient('Lettuce', '1 ', 'cup'),
           new Ingredient('Tomatoes', '2', 'pieces'),
           new Ingredient('Onion', '1', 'piece'),
           new Ingredient('Avocado', '1', 'piece'),
           new Ingredient('Lime', '1', 'piece'),
-          new Ingredient('Cilantro', '1/4 cup', 'cup'),
-          new Ingredient('Sour cream', '1/2 cup', 'cup')
+          new Ingredient('Cilantro', '1/4 ', 'cup'),
+          new Ingredient('Sour cream', '1/2 ', 'cup')
       ],
       ['Mexican', 'Tacos', 'Chicken'],
       [
@@ -269,13 +269,13 @@ export class RecipesService {
           new Ingredient('Onion', '1', 'piece'),
           new Ingredient('Potatoes', '2', 'pieces'),
           new Ingredient('Tomatoes', '2', 'pieces'),
-          new Ingredient('Green beans', '1 cup', 'cup'),
-          new Ingredient('Vegetable broth', '4 cups', 'cups'),
+          new Ingredient('Green beans', '1 ', 'cup'),
+          new Ingredient('Vegetable broth', '4 ', 'cups'),
           new Ingredient('Bay leaves', '2', 'pieces'),
-          new Ingredient('Garlic', '3 cloves', 'pieces'),
+          new Ingredient('Garlic', '3 ', 'pieces'),
           new Ingredient('Salt', 'to taste', 'grams'),
           new Ingredient('Black pepper', 'to taste', 'grams'),
-          new Ingredient('Olive oil', '2 tbsp', 'tablespoons')
+          new Ingredient('Olive oil', '2 ', 'tablespoons')
       ],
       ['Soup', 'Vegetarian'],
       [

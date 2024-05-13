@@ -93,23 +93,24 @@
                 <h3 class="mb-0">Popular Products</h3>
             </div>
         </div>
-        <div class="row gx-2 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2  row-cols-1 mt-2">
+        <div class="row gx-2 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 mt-2">
             <div class="col mb-3 d-flex justify-content-center" *ngFor="let popularProduct of popularProducts ;let i = index">
                 <div class="card" style="width: 18rem;">
-                    <a href="#"><img [src]="popularProduct.imageUrl" class="card-img-top" alt="{{popularProduct.name}}"></a>
+                    <a style="cursor: pointer;"><img [src]="popularProduct.imageUrl" class="card-img-top" alt="{{popularProduct.name}}"></a>
                     <div class="card-body">
                         <div class="text-small mb-1">
-                            <a href="#!" class="text-decoration-none text-muted"><small>{{popularProduct.categories}}</small></a>
+                            <a style="cursor: pointer;" class="text-decoration-none text-muted"><small>{{popularProduct.categories}}</small></a>
                         </div>
-                        <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">{{popularProduct.name}}</a></h2>
+                        <h2 class="fs-6"><a style="cursor: pointer;" (click)="goToProduct(i)"
+                             class="text-inherit text-decoration-none">{{popularProduct.name}}</a></h2>
 
                         <div class="d-flex justify-content-between align-items-center mt-3">
                             <div>
-                                <span class="text-dark">{{popularProduct.price}}</span>
+                                <span class="text-dark">{{popularProduct.price}} EGP</span>
                             </div>
                         </div>
                       <div class="d-grid mt-2">
-                        <a href="#!" class="btn btn-success">
+                        <a style="cursor: pointer;" class="btn btn-success">
                             +Add to cart
                         </a>
                       </div>
@@ -145,9 +146,11 @@
                     <a href="#"><img [src]="dailyBestSell.imageUrl" class="card-img-top img-fluid"style="height: 12rem;" alt="{{dailyBestSell.name}}"></a>
                     <div class="card-body">
                         <div class="text-small mb-1">
-                            <a href="#!" class="text-decoration-none text-muted"><small>{{dailyBestSell.categories}}</small></a>
+                            <a style="cursor: pointer;" class="text-decoration-none text-muted"><small>{{dailyBestSell.categories}}</small></a>
                         </div>
-                        <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">{{dailyBestSell.name}}</a></h2>
+                        <h2 class="fs-6"><a style="cursor: pointer;" (click)="goToProduct(i)"
+                             class="text-inherit text-decoration-none">{{dailyBestSell.name}}</a>
+                            </h2>
 
                         <div class="d-flex justify-content-between align-items-center mt-3">
                             <div>
@@ -155,7 +158,7 @@
                             </div>
                         </div>
                       <div class="d-grid mt-2">
-                        <a href="#!" class="btn btn-success">
+                        <a style="cursor: pointer;" class="btn btn-success">
                             +Add to cart
                         </a>
                       </div>

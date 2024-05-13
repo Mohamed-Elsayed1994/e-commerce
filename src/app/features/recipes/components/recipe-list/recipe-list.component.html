@@ -6,8 +6,8 @@
                 <!-- breadcrumb -->
                 <nav aria-label="breadcrumb">
                    <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#!" class="text-decoration-none">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#!" class="text-decoration-none">Blog</a></li>
+                      <li class="breadcrumb-item"><a href="#!" class="text-decoration-none text-muted">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#!" class="text-decoration-none text-muted">Blog</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Freshcart Blog</li>
                    </ol>
                 </nav>
@@ -34,9 +34,9 @@
              <div class="col-12 col-md-12 col-lg-8">
                 <a href="#!"class="">
                    <!-- img -->
-                   <div class="img-zoom">
+                   <div>
                       <img src="https://img.freepik.com/premium-photo/vector-illustration-thanksgiving-invitation-greeting-card-prints-postersillustration_837518-7110.jpg"
-                       alt="" class="img-fluid w-100">
+                       alt="" class="img-fluid w-100 rounded">
                    </div>
                 </a>
              </div>
@@ -64,18 +64,20 @@
           <div class="row g-4 row-cols-xl-3 row-cols-lg-3 row-cols-2 row-cols-md-2 mt-2">
              <div class="col" *ngFor="let recipe of recipes;let i = index">
                 <div class="mb-4">
-                   <a href="#!" class="text-decoration-none">
+                   <a class="text-decoration-none">
                       <!-- img -->
                       <div class="img-zoom">
-                         <img [src]="recipe.imageUrl" alt="{{recipe.name}}" class="img-fluid w-100">
+                         <img [src]="recipe.imageUrl" alt="{{recipe.name}}" class="img-fluid w-100 rounded">
                       </div>
                    </a>
                 </div>
                 <!-- text -->
-                <div class="mb-3"><a href="#!" class="text-decoration-none text-muted">{{recipe.categories}}</a></div>
+                <div class="mb-3"><a href="#" class="text-decoration-none text-muted">{{recipe.categories}}</a></div>
                 <!-- text -->
                 <div>
-                   <h2 class="h5"><a href="#!" class="text-decoration-none text-dark">{{recipe.name}}</a></h2>
+                   <h2 class="h5">
+                     <a style="cursor: pointer;"[routerLink]="[i]" class="text-decoration-none text-dark">{{recipe.name}}</a>
+                  </h2>
                    <p>{{recipe.description}}</p>
                    <div class="d-flex justify-content-between text-muted mt-4">
                       <span><small>{{recipe.date}}</small></span>

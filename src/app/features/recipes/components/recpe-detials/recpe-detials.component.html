@@ -1,1 +1,65 @@
-<p>recpe-detials works!</p>
+<main>
+    <!-- section -->
+    <div class="mt-4">
+       <div class="container">
+          <div class="row">
+             <div class="col-12">
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                   <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a class="text-decoration-none text-muted">Recipes</a></li>
+                      <li class="breadcrumb-item"><a class="text-decoration-none text-muted">{{recipe.categories}}</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">{{recipe.name}}</li>
+                   </ol>
+                </nav>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- section -->
+    <section class="my-lg-5 my-3">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-8 offset-md-2">
+                <!-- text -->
+                <div class="mb-5">
+                   <div class="mb-3 text-center"><a class="text-decoration-none text-muted">{{recipe.categories}}</a></div>
+                   <h1 class="fw-bold text-center">{{recipe.name}}</h1>
+                   <div class="d-flex justify-content-center text-muted mt-4">
+                      <span class="me-2"><small>{{recipe.date}}</small></span>
+                      <span>
+                         <small>
+                            Read time:
+                            <span class="text-dark fw-bold">{{recipe.readTime}}</span>
+                         </small>
+                      </span>
+                   </div>
+                </div>
+                <div class="mb-8"><img [src]="recipe.imageUrl" alt="" class="img-fluid rounded"></div>
+                <div>
+                   <div class="mb-4">
+                     
+                   </div>
+                   <hr class="mt-lg-10 mb-lg-6 my-md-6">
+                   <div class="mb-4">
+                      <h3>Description :</h3>
+                      <p>{{recipe.description}}</p>
+                   </div>
+                  <div class="mb-5" >
+                     <h3 class="mb-3" >Ingredients :</h3>
+                     <ul>
+                        <li *ngFor="let ingredient of recipe.ingrediants">
+                          {{ingredient.name}}-{{ingredient.amount}}-{{ingredient.unit}}
+                       </li>
+                     </ul>
+                  </div>
+                  <div class="mb-4">
+                     <h3>Instructions :</h3>
+                     <p>{{recipe.instructions}}</p>
+                  </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>
