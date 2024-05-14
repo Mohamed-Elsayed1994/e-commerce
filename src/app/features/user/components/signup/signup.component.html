@@ -1,1 +1,88 @@
-<p>signup works!</p>
+
+<main>
+    <section class="my-lg-5 my-3">
+       <div class="container">
+          <div class="row justify-content-center align-items-center">
+             <div class="col-12 col-md-6 col-lg-4">
+                <div class="mb-lg-4 mb-3">
+                   <h1 class="mb-1 h2 fw-bold">Get Start Shopping</h1>
+                   <p>Welcome to MARKET! Enter your email to get started.</p>
+                </div>
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                   <div class="row g-3">
+                      <div class="col">
+                         <label for="formSignupfname" class="form-label visually-hidden">First Name</label>
+                         <input
+                          type="text" 
+                          class="form-control" 
+                          id="formSignupfname" 
+                          placeholder="First Name" 
+                          required 
+                          ngModel 
+                          name="firstName"
+                          #firstName="ngModel">
+                         <small class="text-danger" *ngIf="firstName.invalid && firstName.touched">Please enter first name.</small>
+                      </div>
+                      <div class="col">
+                         <label for="formSignuplname" class="form-label visually-hidden">Last Name</label>
+                         <input 
+                         type="text" 
+                         class="form-control" 
+                         id="formSignuplname" 
+                         placeholder="Last Name" 
+                         required
+                         ngModel 
+                         name="lastName"
+                         #lastName="ngModel">
+                         <small class="text-danger"*ngIf="lastName.invalid && lastName.touched">Please enter last name.</small>
+                      </div>
+                      <div class="col-12">
+                         <label for="formSignupEmail" class="form-label visually-hidden">Email address</label>
+                         <input 
+                         type="email" 
+                         class="form-control" 
+                         id="formSignupEmail" 
+                         placeholder="Email" 
+                         required 
+                         ngModel
+                         email
+                         name="email"
+                         #email="ngModel">
+                         <small class="text-danger" *ngIf="email.invalid && email.touched">Please enter email.</small>
+                      </div>
+                      <div class="col-12">
+                         <div class="password-field position-relative">
+                            <label for="formSignupPassword" class="form-label visually-hidden">Password</label>
+                            <div class="password-field position-relative">
+                               <input 
+                               type="password" 
+                               class="form-control fakePassword" 
+                               id="formSignupPassword" 
+                               placeholder="*****" 
+                               required 
+                               ngModel
+                               name="password"
+                               #password="ngModel">
+                               <span><i class="bi bi-eye-slash passwordToggler"></i></span>
+                               <small class="text-danger" *ngIf="password.invalid && password.touched">Please enter password.</small>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-12 d-grid">
+                        <button type="submit" [disabled]="f.invalid" class="btn btn-success">Register</button>
+                    </div>
+                      <p>
+                         <small>
+                            By continuing, you agree to our
+                            <a class="link-success">Terms of Service</a>
+                            &amp;
+                            <a class="link-success">Privacy Policy</a>
+                         </small>
+                      </p>
+                   </div>
+                </form>
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>

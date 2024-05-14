@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  @ViewChild('f', { static: false })
+  loginForm!: NgForm;
+
+  onSubmit(form: NgForm){
+    this.loginForm = form.value;
+  }
+
 
 }

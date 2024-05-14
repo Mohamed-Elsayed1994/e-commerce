@@ -19,6 +19,7 @@ import { ProfileComponent } from './features/user/components/profile/profile.com
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './features/user/components/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     ProfileComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
