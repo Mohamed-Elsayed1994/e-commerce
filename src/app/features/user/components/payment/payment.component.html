@@ -1,0 +1,138 @@
+<div class="py-4 p-md-4 p-lg-5">
+    <!-- heading -->
+    <div class="d-flex justify-content-between mb-4 align-items-center">
+       <h2 class="mb-0">Payment Methods</h2>
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Add Payment
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Payment Method</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <!-- Form -->
+                    <form class="row mb-4 needs-validation" novalidate="">
+                       <div class="mb-3 col-12 col-md-12 mb-4">
+                          <h5 class="mb-3">Credit / Debit card</h5>
+                          <!-- Radio button -->
+                          <div class="d-inline-flex">
+                             <div class="form-check me-2">
+                                <input type="radio" class="form-check-input" id="paymentRadioOne" name="paymentRadioOne" required="">
+                                <label class="form-check-label" for="paymentRadioOne"><img src="" alt=""></label>
+                             </div>
+                             <!-- Radio button -->
+                             <div class="form-check me-2">
+                                <input type="radio" id="paymentRadioTwo" name="paymentRadioOne" class="form-check-input">
+                                <label class="form-check-label" for="paymentRadioTwo"><img src="" alt=""></label>
+                             </div>
+    
+                             <!-- Radio button -->
+                             <div class="form-check">
+                                <input type="radio" id="paymentRadioFour" name="paymentRadioOne" class="form-check-input">
+                                <label class="form-check-label" for="paymentRadioFour"><img src="" alt=""></label>
+                             </div>
+                          </div>
+                       </div>
+                       <!-- Name on card -->
+                       <div class="mb-3 col-12 col-md-4">
+                          <label for="nameoncard" class="form-label">Name on card</label>
+                          <input id="nameoncard" type="text" class="form-control" name="nameoncard" placeholder="Name" required="">
+                          <div class="invalid-feedback">Please enter name.</div>
+                       </div>
+                       <!-- Month -->
+                       <div class="mb-3 col-12 col-md-4">
+                          <label for="validationCustomMonth" class="form-label">Month</label>
+                          <select class="form-select" id="validationCustomMonth" required="">
+                             <option value="">Month</option>
+                             <option value="Jan">Jan</option>
+                             <option value="Feb">Feb</option>
+                             <option value="Mar">Mar</option>
+                             <option value="Apr">Apr</option>
+                             <option value="May">May</option>
+                             <option value="June">June</option>
+                             <option value="July">July</option>
+                             <option value="Aug">Aug</option>
+                             <option value="Sep">Sep</option>
+                             <option value="Oct">Oct</option>
+                             <option value="Nov">Nov</option>
+                             <option value="Dec">Dec</option>
+                          </select>
+                          <div class="invalid-feedback">Please select month.</div>
+                       </div>
+                       <!-- Year -->
+                       <div class="mb-3 col-12 col-md-4">
+                          <label for="validationCustomYear" class="form-label">Year</label>
+                          <select class="form-select" id="validationCustomYear" required="">
+                             <option value="">Year</option>
+                             <option value="June">2022</option>
+                             <option value="July">2023</option>
+                             <option value="August">2024</option>
+                             <option value="Sep">2025</option>
+                             <option value="Oct">2026</option>
+                          </select>
+                          <div class="invalid-feedback">Please select year.</div>
+                       </div>
+                       <!-- Card number -->
+                       <div class="mb-3 col-md-8 col-12">
+                          <label for="card-mask" class="form-label">Card Number</label>
+                          <input type="text" class="form-control" id="card-mask" placeholder="xxxx-xxxx-xxxx-xxxx" required="">
+                          <div class="invalid-feedback">Please enter card number.</div>
+                       </div>
+                       <!-- CVV -->
+                       <div class="mb-3 col-md-4 col-12">
+                          <div class="mb-3">
+                             <label for="digit-mask" class="form-label">
+                                CVV Code
+                                <i class="fe fe-help-circle ms-1" data-bs-toggle="tooltip" data-placement="top" aria-label="A 3 - digit number, typically printed on the back of a card." data-bs-original-title="A 3 - digit number, typically printed on the back of a card."></i>
+                             </label>
+                             <input type="password" class="form-control" name="cvv" id="digit-mask" placeholder="xxx" maxlength="3" required="">
+                             <div class="invalid-feedback">Please enter cvv.</div>
+                          </div>
+                       </div>
+                       <!-- Button -->
+                       <div class="col-md-6 col-12">
+                          <button class="btn btn-success btn-sm" type="submit">Add New Card</button>
+                       </div>
+                    </form>
+                    <span>
+                       <strong>Note:</strong>
+                       that you can later remove your card at the account setting page.
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger btn-sm" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success btn-sm">Save changes</button>
+            </div>
+          </div>
+        </div>
+        </div> 
+    <ul class="list-group list-group-flush">
+       <!-- List group item -->
+       <li class="list-group-item py-5 px-0">
+          <div class="d-flex justify-content-between">
+             <div class="d-flex">
+                <!-- img -->
+                <img src="" alt="">
+                <!-- text -->
+                <div class="ms-4">
+                   <h5 class="mb-0 h6 h6">**** 1234</h5>
+                   <p class="mb-0 small">Expires in 10/2023</p>
+                </div>
+             </div>
+             <div>
+                <!-- button -->
+                <a href="#" class="btn btn-outline-gray-400 disabled btn-sm">Remove</a>
+             </div>
+          </div>
+       </li>
+    </ul>
+    
+</div>

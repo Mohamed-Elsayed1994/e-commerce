@@ -20,6 +20,10 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './features/user/components/forgot-password/forgot-password.component';
+import { SettingsComponent } from './features/user/components/settings/settings.component';
+import { AddressComponent } from './features/user/components/address/address.component';
+import { PaymentComponent } from './features/user/components/payment/payment.component';
+import { UserOrdersComponent } from './features/user/components/user-orders/user-orders.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { ForgotPasswordComponent } from './features/user/components/forgot-passw
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SettingsComponent,
+    AddressComponent,
+    PaymentComponent,
+    UserOrdersComponent
   ],
   imports: [
     BrowserModule,

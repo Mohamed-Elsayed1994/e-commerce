@@ -14,6 +14,10 @@ import { SignupComponent } from './features/user/components/signup/signup.compon
 import { LoginComponent } from './features/user/components/login/login.component';
 import { ProfileComponent } from './features/user/components/profile/profile.component';
 import { ForgotPasswordComponent } from './features/user/components/forgot-password/forgot-password.component';
+import { UserOrdersComponent } from './features/user/components/user-orders/user-orders.component';
+import { SettingsComponent } from './features/user/components/settings/settings.component';
+import { AddressComponent } from './features/user/components/address/address.component';
+import { PaymentComponent } from './features/user/components/payment/payment.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -29,8 +33,16 @@ const routes: Routes = [
   {path: 'wishlist' , component: WishlistComponent},
   {path: 'login' , component: LoginComponent},
   {path: 'signup' , component: SignupComponent},
-  {path: 'profile' , component: ProfileComponent},
   {path: 'forgot-password' , component: ForgotPasswordComponent},
+  {path: 'profile' , component: ProfileComponent,
+    children: [
+      {path: '' , component: UserOrdersComponent},
+      {path: 'setting' , component: SettingsComponent},
+      {path: 'address' , component: AddressComponent},
+      {path: 'payment' , component: PaymentComponent}
+    ]
+  },
+  
 
 ];
 

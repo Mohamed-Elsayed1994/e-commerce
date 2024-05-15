@@ -1,1 +1,134 @@
-<p>profile works!</p>
+<main>
+   <section>
+      <div class="container">
+         <!-- row -->
+         <div class="row">
+            <!-- col -->
+            <div class="col-12">
+               <div class="d-flex justify-content-between align-items-center d-md-none py-4">
+                  <!-- heading -->
+                  <h3 class="fs-5 mb-0">Account Setting</h3>
+                  <!-- button -->
+                  <button 
+                  class="btn btn-outline-success text-muted d-md-none ms-3" 
+                  type="button" 
+                  data-bs-toggle="offcanvas" 
+                  data-bs-target="#offcanvasAccount" 
+                  aria-controls="offcanvasAccount">
+                      Account Setting
+                   </button>
+               </div>
+            </div>
+            <!-- col -->
+            <div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
+               <div class="pt-5 pe-lg-4">
+                  <!-- nav -->
+                  <ul class="nav flex-column nav-underline">
+                     <!-- nav item -->
+                     <li class="nav-item" >
+                        <a 
+                        class="nav-link text-muted fw-bold" 
+                        aria-current="page" 
+                        [routerLinkActiveOptions]="{exact: true}" 
+                        routerLinkActive="active" 
+                        routerLink="/profile/">
+                           Your Orders
+                        </a>
+                     </li>
+                     <!-- nav item -->
+                     <li class="nav-item">
+                        <a 
+                        class="nav-link text-muted fw-bold" 
+                        routerLinkActive="active" 
+                        routerLink="/profile/setting">
+                           Settings
+                        </a>
+                     </li>
+                     <!-- nav item -->
+                     <li class="nav-item" >
+                        <a 
+                        class="nav-link text-muted fw-bold" 
+                        routerLinkActive="active" 
+                        routerLink="/profile/address">
+                           Address
+                        </a>
+                     </li>
+                     <!-- nav item -->
+                     <li class="nav-item">
+                        <a 
+                        class="nav-link text-muted fw-bold"  
+                        routerLinkActive="active" 
+                        routerLink="/profile/payment">
+                           Payment Method
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-12">
+               <router-outlet></router-outlet>
+            </div>
+         </div>
+      </div>
+   </section>
+   <div 
+   class="offcanvas offcanvas-start" 
+   tabindex="-1" 
+   id="offcanvasAccount" 
+   aria-labelledby="offcanvasAccountLabel" 
+   aria-modal="true" 
+   role="button">
+      <!-- offcanvas header -->
+      <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasAccountLabel"> Account Setting</h5>
+         <button 
+         type="button" 
+         class="btn-close" 
+         data-bs-dismiss="offcanvas" 
+         aria-label="Close"></button>
+      </div>
+      <!-- offcanvas body -->
+      <div class="offcanvas-body">
+          <!-- nav -->
+          <ul class="nav flex-column nav-underline">
+              <!-- nav item -->
+              <li class="nav-item" >
+                 <a 
+                 class="nav-link text-muted fw-bold" 
+                 [routerLinkActiveOptions]="{exact: true}" 
+                 routerLinkActive="active" 
+                 routerLink="/profile/">
+                    Your Orders
+                 </a>
+              </li>
+              <!-- nav item -->
+              <li class="nav-item">
+                 <a 
+                 class="nav-link text-muted fw-bold" 
+                 routerLinkActive="active" 
+                 routerLink="/profile/setting">
+                    Settings
+                 </a>
+              </li>
+              <!-- nav item -->
+              <li class="nav-item" >
+                 <a 
+                 class="nav-link text-muted fw-bold" 
+                 routerLinkActive="active" 
+                 routerLink="/profile/address">
+                    Address
+                 </a>
+              </li>
+              <!-- nav item -->
+              <li class="nav-item">
+                 <a 
+                 class="nav-link text-muted fw-bold"  
+                 routerLinkActive="active" 
+                 routerLink="/profile/payment">
+                    Payment Method
+                 </a>
+              </li>
+           </ul>
+      </div>
+   </div>
+</main>
