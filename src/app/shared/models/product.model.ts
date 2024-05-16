@@ -9,7 +9,10 @@ export class Product {
         public tags: string[] = [],
         public isAvailable: boolean = true,
         public quantityInStock: number,
-        public ratings: number){
+        public ratings: number,
+        public orderQuantity: number = 1
+    )
+        {
 
     }
 }

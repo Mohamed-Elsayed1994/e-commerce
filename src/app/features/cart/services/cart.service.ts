@@ -21,7 +21,7 @@ export class CartService {
 
   }
   getTotalPrice(): number {
-    return this.cartItems.reduce((total, product) => total + product.price, 0);
+    return this.cartItems.reduce((total, product) => total + (product.price * product.orderQuantity), 0);
   }
     
 

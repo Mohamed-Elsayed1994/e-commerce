@@ -51,7 +51,7 @@
                                             <img [src]="cartItem.imageUrl" alt="Ecommerce" style="width: 20%;">
                                             <div class="ms-3">
                                                 <!-- title -->
-                                                <a href="" class="text-decoration-none text-dark">
+                                                <a [routerLink]="['/products', i]" class="text-decoration-none text-dark">
                                                     <h6 class="mb-0">{{cartItem.name}}</h6>
                                                 </a>
                                                 <span><small class="text-muted">{{cartItem.tags}}</small></span>
@@ -82,7 +82,7 @@
                                         step="1" 
                                         max="10" 
                                         name="quantity" 
-                                        [(ngModel)]="quantity"
+                                        [(ngModel)]="cartItem.orderQuantity"
                                         #quantityInput
                                         class="form-control">
                                     </div>
@@ -94,8 +94,8 @@
                         </ul>
                         <!-- btn -->
                         <div class="d-flex justify-content-between mt-4">
-                            <a href="#!" class="btn btn-success">Continue Shopping</a>
-                            <a href="#!" class="btn btn-dark">Update Cart</a>
+                            <a routerLink="/products" class="btn btn-success">Continue Shopping</a>
+                            <a (click)="updateTotalPrice()" class="btn btn-dark">Update Cart</a>
                         </div>
                     </div>
                 </div>
@@ -122,14 +122,14 @@
                                         <div class="me-auto">
                                             <div>Service Fee</div>
                                         </div>
-                                        <span>21 EGP</span>
+                                        <span >{{serviceFee}} EGP</span>
                                     </li>
                                     <!-- list group item -->
                                     <li class="list-group-item d-flex justify-content-between align-items-start">
                                         <div class="me-auto">
                                             <div class="fw-bold">Subtotal</div>
                                         </div>
-                                        <span class="fw-bold">{{totalPrice + 21}} EGP</span>
+                                        <span class="fw-bold">{{subtotal}} EGP</span>
                                     </li>
                                 </ul>
                             </div>
@@ -137,7 +137,7 @@
                                 <!-- btn -->
                                 <a routerLink="/checkout" class="btn btn-success btn-lg d-flex justify-content-between align-items-center" type="submit">
                                     Go to Checkout
-                                    <span class="fw-bold">{{totalPrice + 21}} EGP</span>
+                                    <span class="fw-bold">{{subtotal}} EGP</span>
                                 </a>
                             </div>
                             <!-- text -->

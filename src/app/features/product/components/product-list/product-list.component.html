@@ -2,10 +2,24 @@
     <div class="row gx-2 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-2">
         <div class="col mb-3 d-flex justify-content-center" *ngFor="let product of products ;let i = index" >
             <div class="card" style="width: 18rem;">
-                <a href="#"><img [src]="product.imageUrl" class="card-img-top" alt="{{product.name}}"></a>
+                <div class="position-relative">
+                    <div class="position-absolute top-0 end-0 p-2">
+                        <button (click)="onAddToWishlist(product)" type="button" class="btn btn-success btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="">
+                        <img [src]="product.imageUrl" class="card-img-top" alt="{{product.name}}">
+                    </a>
+                </div>
+                
                 <div class="card-body">
                     <div class="text-small mb-1">
-                        <a href="#!" class="text-decoration-none text-muted"><small>{{product.categories}}</small></a>
+                        <a href="#!" class="text-decoration-none text-muted">
+                            <small>{{product.categories}}</small>
+                        </a>
                     </div>
                     <h2 class="fs-6"><a style="cursor: pointer;"[routerLink]="[i]" 
                         class="text-inherit text-decoration-none">{{product.name}} </a>

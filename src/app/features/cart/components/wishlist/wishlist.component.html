@@ -26,67 +26,60 @@
                    <h1 class="mb-1">My Wishlist</h1>
                    <p>products in this wishlist:</p>
                 </div>
-                <div>
-                   <div class="table-responsive">
-                      <table class="table text-nowrap table-with-checkbox">
-                         <thead class="table-light">
-                            <tr>
-                               <th>
-                                  <div class="form-check">
-                                     <input class="form-check-input" type="checkbox" value="" id="checkAll">
-                                     <label class="form-check-label" for="checkAll"></label>
-                                  </div>
-                               </th>
-                               <th></th>
-                               <th>Product</th>
-                               <th>Price</th>
-                               <th>In Stock</th>
-                               <th>Actions</th>
-                               <th>Remove</th>
-                            </tr>
-                         </thead>
-                         <tbody>
-                            <tr>
-                               <td class="align-middle">
-                                  <div class="form-check">
-                                     <input 
-                                     class="form-check-input" 
-                                     type="checkbox" 
-                                     value="" 
-                                     id="chechboxTwo">
-                                     <label class="form-check-label" for="chechboxTwo"></label>
-                                  </div>
-                               </td>
-                               <td class="align-middle">
-                                  <a href="#">
-                                    <img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="">
-                                 </a>
-                               </td>
-                               <td class="align-middle">
-                                  <div>
-                                     <h5 class="fs-6 mb-0">
-                                       <a href="#" class="text-inherit">Organic Banana</a>
-                                    </h5>
-                                     <small>$.98 / lb</small>
-                                  </div>
-                               </td>
-                               <td class="align-middle">$35.00</td>
-                               <td class="align-middle">
-                                 <span class="badge bg-success">true</span>
-                              </td>
-                               <td class="align-middle">
-                                  <div class="btn btn-success btn-sm">Add to Cart</div>
-                               </td>
-                               <td class="align-middle">
-                                  <a href="#" class="text-muted">
-                                    <div class="btn btn-danger btn-sm">Delete</div>
-                                  </a>
-                               </td>
-                            </tr>
-                         </tbody>
-                      </table>
-                   </div>
+                <div class="table-responsive">
+                  <table class="table text-nowrap table-with-checkbox">
+                    <thead class="table-light">
+                      <tr>
+                        <th>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkAll">
+                            <label class="form-check-label" for="checkAll"></label>
+                          </div>
+                        </th>
+                        <th>Img</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>In Stock</th>
+                        <th>Actions</th>
+                        <th>Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let wishlistItem of wishlistItems; let i = index">
+                        <td class="align-middle">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chechbox{{i}}">
+                            <label class="form-check-label" for="chechbox{{i}}"></label>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <img [src]="wishlistItem.imageUrl" class="img-fluid" style="max-width: 100px;" alt="">
+                        </td>
+                        <td class="align-middle">
+                          <div>
+                            <h5 class="fs-6 mb-0">
+                              <a href="#" class="text-inherit">{{wishlistItem.name}}</a>
+                            </h5>
+                            <small>{{wishlistItem.tags}}</small>
+                          </div>
+                        </td>
+                        <td class="align-middle">{{wishlistItem.price}} EGP</td>
+                        <td class="align-middle">
+                          <span class="badge bg-success">{{wishlistItem.isAvailable}}</span>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn btn-success btn-sm" (click)="onAddToCart(wishlistItem)">Add to Cart</div>
+                        </td>
+                        <td class="align-middle">
+                          <a  class="text-muted">
+                            <div (click)="onDeleteItem(i)" type="button" class="btn btn-outline-danger btn-sm">Delete</div>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+                
              </div>
           </div>
        </div>
