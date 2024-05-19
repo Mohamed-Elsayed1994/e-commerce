@@ -24,6 +24,12 @@ export class CartComponent implements OnInit {
   loadCart(): void {
     this.cartItems = this.cartService.getCartItems();
     this.updateTotalPrice();
+    
+   
+  }
+
+  updateTotalPrice(): void {
+    this.totalPrice = this.cartService.getTotalPrice();
     if(this.cartItems.length > 0){
       this.serviceFee = 21;
       this.subtotal = this.totalPrice + this.serviceFee
@@ -31,11 +37,6 @@ export class CartComponent implements OnInit {
       this.serviceFee = 0;
       this.subtotal = 0;
     }
-   
-  }
-
-  updateTotalPrice(): void {
-    this.totalPrice = this.cartService.getTotalPrice();
   }
 
   onDeleteItem(index: number): void {

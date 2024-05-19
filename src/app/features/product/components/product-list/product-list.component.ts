@@ -11,6 +11,7 @@ import { WishlistService } from '../../../cart/services/wishlist.service';
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
+
  
   constructor(private productService: ProductService,
               private cartService: CartService,
@@ -23,9 +24,18 @@ export class ProductListComponent implements OnInit {
   }
   onAddToCart(product: Product){
     this.cartService.addToCart(product);
+    product.addedToCart = true;
+    setTimeout(() => {
+      product.addedToCart = false;
+    }, 500);
   }
   onAddToWishlist(product: Product){
     this.wishlistService.addToWishlist(product);
+    product.addedToWishlist = true;
+    setTimeout(() => {
+      product.addedToWishlist = false;
+    }, 500);
+
   }
 
   

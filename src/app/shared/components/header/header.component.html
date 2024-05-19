@@ -1,4 +1,4 @@
-<div class="border-bottom">
+<div class="border-bottom bg-white ">
     <!-- lang-nav -->
 	<div class="bg-light py-1">
 		<div class="container">
@@ -49,10 +49,15 @@
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
 									<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                                 </svg>
+								<span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-success">
+									{{wishlistItems.length}}
+									<span class="visually-hidden">unread messages</span>
+								</span>
 							</a>
+							
 						</div>
 						<div class="list-inline-item me-5">
-							<a routerLink="/login" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal">
+							<a routerLink="/login" class="text-muted">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
 									<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
 									<circle cx="12" cy="7" r="4"></circle>
@@ -61,11 +66,13 @@
 						</div>
 						<div class="list-inline-item me-5 me-lg-0">
 							<a class="text-muted position-relative"  routerLink="/cart"  role="button">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
-									<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-									<line x1="3" y1="6" x2="21" y2="6"></line>
-									<path d="M16 10a4 4 0 0 1-8 0"></path>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" stroke-width="2" class="bi bi-cart2" viewBox="0 0 16 16">
+									<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
 								</svg>
+								<span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-success">
+									{{cartItems.length}}
+									<span class="visually-hidden">unread messages</span>
+								</span>
 							</a>
 						</div>
 						<div class="list-inline-item d-inline-block d-lg-none">

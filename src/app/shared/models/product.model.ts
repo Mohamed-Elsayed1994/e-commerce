@@ -10,7 +10,10 @@ export class Product {
         public isAvailable: boolean = true,
         public quantityInStock: number,
         public ratings: number,
-        public orderQuantity: number = 1
+        public orderQuantity: number = 1,
+        public addedToCart?: boolean,
+        public addedToWishlist?: boolean,
+        public orderDate?: Date
     )
         {
 

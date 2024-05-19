@@ -17,27 +17,27 @@
                 <th></th>
              </tr>
           </thead>
-          <tbody>
+          <tbody *ngFor="let userOrder of userOrders ; let i = index">
              <!-- Table body -->
              <tr>
                 <td class="align-middle border-top-0 w-0">
-                   <a href="#"><img src="" alt="Ecommerce"></a>
+                   <a href="#"><img [src]="userOrder.imageUrl" class="img-fluid" style="max-width: 100px;" alt="Ecommerce"></a>
                 </td>
                 <td class="align-middle border-top-0">
                    <a href="#" class="fw-semibold text-inherit">
-                      <h6 class="mb-0">Haldiram's Nagpur Aloo Bhujia</h6>
+                      <h6 class="mb-0">{{userOrder.name}}</h6>
                    </a>
-                   <span><small class="text-muted">400g</small></span>
+                   <span><small class="text-muted">{{userOrder.tags}}</small></span>
                 </td>
                 <td class="align-middle border-top-0">
-                   <a href="#" class="text-inherit">#14899</a>
+                   <a href="#" class="text-inherit">#{{userOrder.id}}</a>
                 </td>
-                <td class="align-middle border-top-0">March 5, 2023</td>
-                <td class="align-middle border-top-0">1</td>
+                <td class="align-middle border-top-0">{{userOrder.orderDate}}</td>
+                <td class="align-middle border-top-0">{{userOrder.orderQuantity}}</td>
                 <td class="align-middle border-top-0">
                    <span class="badge bg-warning">Processing</span>
                 </td>
-                <td class="align-middle border-top-0">$15.00</td>
+                <td class="align-middle border-top-0">{{userOrder.price * userOrder.orderQuantity}} EGP</td>
                 <td class="text-muted align-middle border-top-0">
                    <a href="#" class="text-inherit" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View"><i class="feather-icon icon-eye"></i></a>
                 </td>
