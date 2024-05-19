@@ -1,0 +1,19 @@
+.my-green {
+    color: black;
+}
+  
+.my-green:hover {
+    color: rgb(55, 112, 55);
+}
+.img-zoom {
+    overflow: hidden; 
+}
+  
+.img-zoom img {
+    transition: transform 0.3s ease; 
+}
+
+.img-zoom img:hover {
+    transform: scale(1.1);
+}
+  

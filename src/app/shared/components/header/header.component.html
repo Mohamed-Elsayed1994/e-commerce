@@ -27,17 +27,15 @@
 					</div>
 				</div>
 				<div class="col-xxl-5 col-lg-5 d-none d-lg-block">
-					<form action="#">
+					<form>
 						<div class="input-group">
 							<input class="form-control rounded" type="search" placeholder="Search for products">
-
 						</div>
 					</form>
 				</div>
 				<div class="col-md-2 col-xxl-3 d-none d-lg-block">
 					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-outline-secondary text-muted" data-bs-toggle="modal" data-bs-target="#locationModal">
-						<i ></i>
+					<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#locationModal">
 						Location
 					</button>
 				</div>
@@ -98,14 +96,13 @@
 				</div>
 				<div class="offcanvas-body">
 					<div class="d-block d-lg-none mb-4">
-						<form action="#">
+						<form >
 							<div class="input-group">
 								<input class="form-control rounded" type="search" placeholder="Search for products">
 							</div>
 						</form>
 						<div class="mt-2">
 							<button type="button" class="btn btn-outline-secondary text-muted w-100" data-bs-toggle="modal" data-bs-target="#locationModal">
-								<i class=""></i>
 								Pick Location
 							</button>
 						</div>
@@ -116,7 +113,7 @@
 						</a>
 						<div class="collapse mt-2" id="collapseExample">
 							<div class="card card-body">
-								<ul class="mb-0 list-unstyled">
+								<ul class="mb-0 list-unstyled" data-bs-dismiss="offcanvas">
 									<li><a class="dropdown-item" href="#">Dairy, Bread &amp; Eggs</a></li>
 									<li><a class="dropdown-item" href="#">Snacks &amp; Munchies</a></li>
 									<li><a class="dropdown-item" href="#">Fruits &amp; Vegetables</a></li>
@@ -144,62 +141,62 @@
 					</div>
 					<div>
 						<ul class="navbar-nav nav-underline align-items-center">
-							<li class="nav-item  w-100 w-lg-auto" >
+							<li class="nav-item  w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/home">Home</a>
 							</li>
-							<li class="nav-item  w-100 w-lg-auto">
+							<li class="nav-item  w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/products">Shop</a>
 							</li>
-							<li class="nav-item w-100 w-lg-auto">
+							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/recipes">Recipes</a>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mega menu</a>
+								<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mega menu</a>
 								<div class="dropdown-menu pb-0" style="width: 100vw;">
 									<div class="row p-2 p-lg-4">
 										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<h6 class="text-primary ps-3">Dairy, Bread &amp; Eggs</h6>
-											<a class="dropdown-item" href="#">Butter</a>
-											<a class="dropdown-item" href="#">Milk Drinks</a>
-											<a class="dropdown-item" href="#">Curd &amp; Yogurt</a>
-											<a class="dropdown-item" href="#">Eggs</a>
-											<a class="dropdown-item" href="#">Buns &amp; Bakery</a>
-											<a class="dropdown-item" href="#">Cheese</a>
-											<a class="dropdown-item" href="#">Condensed Milk</a>
-											<a class="dropdown-item" href="#">Dairy Products</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Butter</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Milk Drinks</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Curd &amp; Yogurt</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Eggs</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Buns &amp; Bakery</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Cheese</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Condensed Milk</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Dairy Products</a>
 										</div>
 										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<h6 class="text-primary ps-3">Breakfast &amp; Instant Food</h6>
-											<a class="dropdown-item" href="#">Breakfast Cereal</a>
-											<a class="dropdown-item" href="#">Noodles, Pasta &amp; Soup</a>
-											<a class="dropdown-item" href="#">Frozen Veg Snacks</a>
-											<a class="dropdown-item" href="#">Frozen Non-Veg Snacks</a>
-											<a class="dropdown-item" href="#">Vermicelli</a>
-											<a class="dropdown-item" href="#">Instant Mixes</a>
-											<a class="dropdown-item" href="#">Batter</a>
-											<a class="dropdown-item" href="#">Fruit and Juices</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Breakfast Cereal</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Noodles, Pasta &amp; Soup</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Frozen Veg Snacks</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Frozen Non-Veg Snacks</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Vermicelli</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Instant Mixes</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Batter</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Fruit and Juices</a>
 										</div>
 										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<h6 class="text-primary ps-3">Cold Drinks &amp; Juices</h6>
-											<a class="dropdown-item" href="">Soft Drinks</a>
-											<a class="dropdown-item" href="#">Fruit Juices</a>
-											<a class="dropdown-item" href="#">Coldpress</a>
-											<a class="dropdown-item" href="#">Water &amp; Ice Cubes</a>
-											<a class="dropdown-item" href="#">Soda &amp; Mixers</a>
-											<a class="dropdown-item" href="#">Health Drinks</a>
-											<a class="dropdown-item" href="#">Herbal Drinks</a>
-											<a class="dropdown-item" href="#">Milk Drinks</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Soft Drinks</a>
+											<a class="dropdown-item" hdata-bs-dismiss="offcanvas" routerLink="/products">Fruit Juices</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Coldpress</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Water &amp; Ice Cubes</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Soda &amp; Mixers</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Health Drinks</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Herbal Drinks</a>
+											<a class="dropdown-item" data-bs-dismiss="offcanvas" routerLink="/products">Milk Drinks</a>
 										</div>
 									</div>
 								</div>
 							</li>
-							<li class="nav-item w-100 w-lg-auto">
+							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/about">About</a>
 							</li>
-							<li class="nav-item w-100 w-lg-auto">
+							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/contact">Contact</a>
 							</li>
-							<li class="nav-item w-100 w-lg-auto">
+							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/profile">Profile</a>
 							</li>
 						</ul>
@@ -208,4 +205,70 @@
 			</div>
 		</div>
 	</nav>
+</div>
+<div  class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true" role="dialog" >
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body p-4">
+				<div class="d-flex justify-content-between align-items-start">
+					<div>
+						<h5 class="mb-1" id="locationModalLabel">Choose your Delivery Location</h5>
+						<p class="mb-0 small">Enter your address and we will specify the offer you area.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="my-5">
+					<input type="search" class="form-control" placeholder="Search your area">
+				</div>
+				<div class="d-flex justify-content-between align-items-center mb-2">
+					<h6 class="mb-0">Select Location</h6>
+					<a href="#" class="btn btn-outline-secondary text-muted btn-sm">Clear All</a>
+				</div>
+				<div>
+					<div class="list-group list-group-flush">
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Alabama</span>
+							<span>Min:$20</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Alaska</span>
+							<span>Min:$30</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Arizona</span>
+							<span>Min:$50</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>California</span>
+							<span>Min:$29</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Colorado</span>
+							<span>Min:$80</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Florida</span>
+							<span>Min:$90</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Arizona</span>
+							<span>Min:$50</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>California</span>
+							<span>Min:$29</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Colorado</span>
+							<span>Min:$80</span>
+						</a>
+						<a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+							<span>Florida</span>
+							<span>Min:$90</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

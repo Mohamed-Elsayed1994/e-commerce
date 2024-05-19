@@ -1,0 +1,7 @@
+.my-card {
+    transition: border-color 0.3s ease;
+}
+  
+.my-card:hover {
+    border: 2px solid rgb(120, 212, 120);
+}

@@ -10,7 +10,7 @@ export class RecipesService {
     new Recipe(
       '1',
       'Spaghetti Carbonara',
-      'https://source.unsplash.com/1600x900/?spaghetti',
+      'assets/images/recipes/1.jpg',
       'A classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper.',
       '30 minutes',
       '2024-05-10',
@@ -35,7 +35,7 @@ export class RecipesService {
   new Recipe(
       '2',
       'Chicken Alfredo Pasta',
-      'https://source.unsplash.com/1600x900/?chicken-pasta',
+      'assets/images/recipes/2.jpg',
       'Creamy pasta dish with tender chicken, mushrooms, and garlic in a rich Alfredo sauce.',
       '45 minutes',
       '2024-05-09',
@@ -64,7 +64,7 @@ export class RecipesService {
   new Recipe(
       '3',
       'Caprese Salad',
-      'https://source.unsplash.com/1600x900/?caprese-salad',
+      'assets/images/recipes/3.jpg',
       'A simple and refreshing salad made with fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.',
       '15 minutes',
       '2024-05-08',
@@ -86,11 +86,11 @@ export class RecipesService {
           'Serve immediately as a refreshing appetizer or side dish.'
       ],
       10
-  ),/*
+  ),
   new Recipe(
       '4',
       'Homemade Pizza',
-      'https://source.unsplash.com/1600x900/?pizza',
+      'assets/images/recipes/4.jpg',
       'Classic homemade pizza with tomato sauce, mozzarella cheese, pepperoni, and fresh basil.',
       '1 hour',
       '2024-05-07',
@@ -116,7 +116,7 @@ export class RecipesService {
   new Recipe(
       '5',
       'Caesar Salad',
-      'https://source.unsplash.com/1600x900/?caesar-salad',
+      'assets/images/recipes/5.jpg',
       'A classic Caesar salad with crisp romaine lettuce, garlic croutons, Parmesan cheese, and Caesar dressing.',
       '20 minutes',
       '2024-05-06',
@@ -138,7 +138,7 @@ export class RecipesService {
   new Recipe(
       '6',
       'Vegetable Stir Fry',
-      'https://source.unsplash.com/1600x900/?stir-fry',
+      'assets/images/recipes/6.jpg',
       'A healthy and colorful stir-fry made with a variety of fresh vegetables and a flavorful sauce.',
       '25 minutes',
       '2024-05-05',
@@ -170,7 +170,7 @@ export class RecipesService {
   new Recipe(
       '7',
       'Margarita Pizza',
-      'https://source.unsplash.com/1600x900/?margarita-pizza',
+      'assets/images/recipes/7.jpg',
       'A classic Italian pizza topped with tomato sauce, fresh mozzarella cheese, basil leaves, and olive oil.',
       '45 minutes',
       '2024-05-04',
@@ -198,7 +198,7 @@ export class RecipesService {
   new Recipe(
       '8',
       'Chocolate Chip Cookies',
-      'https://source.unsplash.com/1600x900/?chocolate-chip-cookies',
+      'assets/images/recipes/8.jpg',
       'Classic homemade chocolate chip cookies with a soft and chewy texture.',
       '25 minutes',
       '2024-05-03',
@@ -229,7 +229,7 @@ export class RecipesService {
   new Recipe(
       '9',
       'Chicken Tacos',
-      'https://source.unsplash.com/1600x900/?chicken-tacos',
+      'assets/images/recipes/9.jpg',
       'Delicious and flavorful chicken tacos with tender chicken, fresh salsa, and creamy guacamole.',
       '30 minutes',
       '2024-05-02',
@@ -259,7 +259,7 @@ export class RecipesService {
   new Recipe(
       '10',
       'Vegetable Soup',
-      'https://source.unsplash.com/1600x900/?vegetable-soup',
+      'assets/images/recipes/10.jpg',
       'Healthy and comforting vegetable soup with a variety of fresh vegetables and flavorful broth.',
       '1 hour',
       '2024-05-01',
@@ -287,7 +287,7 @@ export class RecipesService {
           'Remove bay leaves before serving.'
       ],
       30
-  )*/
+  )
   ];
 
   constructor() { }

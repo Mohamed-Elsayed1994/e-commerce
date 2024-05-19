@@ -1,0 +1,18 @@
+.my-card {
+    transition: border-color 0.3s ease;
+}
+  
+.my-card:hover {
+    border: 2px solid rgb(120, 212, 120);
+}
+.img-zoom {
+    overflow: hidden; 
+}
+  
+.img-zoom img {
+    transition: transform 0.3s ease; 
+}
+
+.img-zoom img:hover {
+    transform: scale(1.1);
+}

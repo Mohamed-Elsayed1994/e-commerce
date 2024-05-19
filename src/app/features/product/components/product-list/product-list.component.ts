@@ -11,6 +11,8 @@ import { WishlistService } from '../../../cart/services/wishlist.service';
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
+  alert: boolean = false;
+  alert0: boolean = false;
 
  
   constructor(private productService: ProductService,
@@ -25,16 +27,20 @@ export class ProductListComponent implements OnInit {
   onAddToCart(product: Product){
     this.cartService.addToCart(product);
     product.addedToCart = true;
+    this.alert = true;
     setTimeout(() => {
       product.addedToCart = false;
-    }, 500);
+      this.alert = false;
+    }, 700);
   }
   onAddToWishlist(product: Product){
     this.wishlistService.addToWishlist(product);
     product.addedToWishlist = true;
+    this.alert0 = true;
     setTimeout(() => {
       product.addedToWishlist = false;
-    }, 500);
+      this.alert0 = false;
+    }, 700);
 
   }
 
