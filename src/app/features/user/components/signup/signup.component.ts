@@ -33,17 +33,15 @@ export class SignupComponent {
       next: (v) => {
         this.isLoading = false;
         this.router.navigate(['./checkout']);
-    },
-      error: (errorMessage) =>{
+      },
+      error: (errorMessage) => {
         this.error = errorMessage;
         this.isLoading = false;
+      },
+      complete: () => {
+        form.reset();
       }
-   });
-  form.reset();
-  }
-
-  onHandelError(){
-    this.error = null;
+    });
   }
 
 }

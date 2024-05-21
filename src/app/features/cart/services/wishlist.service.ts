@@ -26,4 +26,10 @@ export class WishlistService {
     this.wishlistItems.splice(index, 1);
 
   }
+  removeItem(product: Product): void {
+    const index = this.wishlistItems.findIndex(item => item.id === product.id);
+    if (index !== -1) {
+      this.deleteItem(index);
+    }
+  }
 }
