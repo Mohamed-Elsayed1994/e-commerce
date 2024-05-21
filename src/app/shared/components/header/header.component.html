@@ -42,8 +42,8 @@
                 <!--icons -->
 				<div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7">
 					<div class="list-inline">
-						<div class="list-inline-item me-5">
-							<a  routerLink="/wishlist" class="text-muted position-relative">
+						<div class="list-inline-item me-4">
+							<a  routerLink="/wishlist" class="my-green position-relative">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
 									<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                                 </svg>
@@ -52,18 +52,24 @@
 									<span class="visually-hidden">unread messages</span>
 								</span>
 							</a>
-							
 						</div>
-						<div class="list-inline-item me-5">
-							<a routerLink="/login" class="text-muted">
+						<div class="list-inline-item me-4" *ngIf="!isAuthenticated">
+							<a routerLink="/login" class="my-green" >
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
 									<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
 									<circle cx="12" cy="7" r="4"></circle>
 								</svg>
 							</a>
 						</div>
-						<div class="list-inline-item me-5 me-lg-0">
-							<a class="text-muted position-relative"  routerLink="/cart"  role="button">
+						<div class="list-inline-item me-4" *ngIf="isAuthenticated">
+							<a (click)="onLogout()" class="my-green" >
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+									<path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15zM11 2h.5a.5.5 0 0 1 .5.5V15h-1zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+								</svg>
+							</a>
+						</div>
+						<div class="list-inline-item me-4 me-lg-0">
+							<a class="my-green position-relative"  routerLink="/cart"  role="button">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" stroke-width="2" class="bi bi-cart2" viewBox="0 0 16 16">
 									<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
 								</svg>
@@ -76,7 +82,7 @@
 						<div class="list-inline-item d-inline-block d-lg-none">
 							<!-- Button -->
 							<button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-label="Toggle navigation">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-text-indent-left text-primary" viewBox="0 0 16 16">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-text-indent-left text-success" viewBox="0 0 16 16">
 									<path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
 								</svg>
 							</button>
@@ -196,8 +202,8 @@
 							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas">
 								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/contact">Contact</a>
 							</li>
-							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas">
-								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/profile">Profile</a>
+							<li class="nav-item w-100 w-lg-auto" data-bs-dismiss="offcanvas" *ngIf="isAuthenticated">
+								<a class="nav-link text-muted" routerLinkActive="active" routerLink="/profile" >Profile</a>
 							</li>
 						</ul>
 					</div>

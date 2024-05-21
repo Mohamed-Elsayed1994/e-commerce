@@ -3,7 +3,7 @@
 }
   
 .my-card:hover {
-    border: 2px solid rgb(120, 212, 120);
+    border: 1px solid rgb(64, 133, 64);
 }
 .img-zoom {
     overflow: hidden; 
@@ -15,4 +15,19 @@
 
 .img-zoom img:hover {
     transform: scale(1.1);
+}
+.my-wish {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .my-wish {
+    opacity: 1;
+}
+.my-green {
+    color: black;
+}
+  
+.my-green:hover {
+    color: rgb(55, 112, 55);
 }

@@ -1,0 +1,7 @@
+.my-green {
+    color: rgb(80, 80, 80);
+}
+  
+.my-green:hover {
+    color: rgb(0, 155, 0);
+}
